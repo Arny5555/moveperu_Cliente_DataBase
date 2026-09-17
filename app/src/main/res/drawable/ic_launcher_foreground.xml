@@ -1,0 +1,66 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Group to center and slightly scale the logo to fit safe zone if needed -->
+    <!-- The original SVG is 512x512, elements are well centered -->
+    <group android:translateX="0" android:translateY="0">
+
+        <!-- Anillo/Ruta de trazado exterior -->
+        <path
+            android:pathData="M256,86A170,170 0,1 1 256,426A170,170 0,1 1 256,86"
+            android:strokeWidth="24"
+            android:strokeLineCap="round">
+            <aapt:attr name="android:strokeColor">
+                <gradient
+                    android:startX="0"
+                    android:startY="0"
+                    android:endX="512"
+                    android:endY="512"
+                    android:type="linear">
+                    <item android:offset="0" android:color="#FF38BDF8" />
+                    <item android:offset="1" android:color="#FF2563EB" />
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <group android:translateY="-10">
+            <!-- Pin GPS exterior -->
+            <path
+                android:pathData="M256,110 C180,110 120,170 120,246 C120,335 256,420 256,420 C256,420 392,335 392,246 C392,170 332,110 256,110 Z">
+                <aapt:attr name="android:fillColor">
+                    <gradient
+                        android:startX="0"
+                        android:startY="0"
+                        android:endX="512"
+                        android:endY="512"
+                        android:type="linear">
+                        <item android:offset="0" android:color="#FF38BDF8" />
+                        <item android:offset="1" android:color="#FF2563EB" />
+                    </gradient>
+                </aapt:attr>
+            </path>
+
+            <!-- Silueta aerodinámica -->
+            <path
+                android:fillColor="#FFFFFF"
+                android:pathData="M256,160 C220,160 200,190 200,230 L200,290 C200,305 212,315 228,315 L284,315 C300,315 312,305 312,290 L312,230 C312,190 292,160 256,160 Z" />
+
+            <!-- Parabrisas estilizado -->
+            <path
+                android:fillColor="#0F172A"
+                android:pathData="M220,210 C220,190 235,180 256,180 C277,180 292,190 292,210 L292,235 L220,235 Z" />
+
+            <!-- Luces LED -->
+            <path
+                android:fillColor="#38BDF8"
+                android:pathData="M230,280m-10,0a10,10 0,1 1 20,0a10,10 0,1 1 -20,0" />
+            <path
+                android:fillColor="#38BDF8"
+                android:pathData="M282,280m-10,0a10,10 0,1 1 20,0a10,10 0,1 1 -20,0" />
+        </group>
+    </group>
+</vector>
